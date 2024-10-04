@@ -1,0 +1,71 @@
+<!DoCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="https://imgs.search.brave.com/ehABqm-pdwEPiAzUvLC_ROp5nCy9CNwlY7SOZlEMGuE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzY0LzY1LzY0/LzM2MF9GXzU2NDY1/NjQzNF9pVW1UeXBO/VFNiRjJ2dEFXSlll/aGR1NjhvRWdzSVlO/QS5qcGc" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://imgs.search.brave.com/oxiGUT_BfM4xTNpCDMNEXnUR-Ry3bNaa47zf3sayo1w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzgwLzAyLzYy/LzM2MF9GXzc4MDAy/NjI2NF9NU1pqNjEz/SDNiU092T1B1R0xw/MVlIbTY5NDczdFBW/Ri5qcGc" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://imgs.search.brave.com/B2vPE3VkEvsJUao4EaTU0KwxtXKDSv8Cp5IhWwUa0rs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzkyLzk5Lzg3/LzM2MF9GXzk5Mjk5/ODc4OV92NkdISkg0/TWgwcFd3RFIySXhh/UFZwdHlpS0ZXT29h/cC5qcGc" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://imgs.search.brave.com/9ZpVAjRpW8rgOuEgmtjqZZxf4hWT6aUaxYOf-2B71bU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzY4LzQ5LzMx/LzM2MF9GXzU2ODQ5/MzE0Ml9jalBYTllu/ekk5eWNTdVdRWVFP/VmpXNDNSYkg0VHdF/eC5qcGc" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://imgs.search.brave.com/RqHoykit5CR7qtx31CIRsP2xqrMyyovQpMqj3YSJq0c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzUzLzk2LzQ2/LzM2MF9GXzU1Mzk2/NDY2OV9SM1ZnemRY/dktDY24zeHBaQ3pq/RDgxWjkxNG5CR2Qz/RC5qcGc" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://imgs.search.brave.com/pBsACVgDyu6J9BK5ROzZzqfUyqbalEWnTxS_pDoDa1g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzU0LzI4LzM5/LzM2MF9GXzg1NDI4/Mzk4N19JVEtXRnJH/eWRMM0pHWnZGc0ly/V2U3d1ZHR0pVQjJi/aC5qcGc" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://imgs.search.brave.com/a61Tjx_xqnJmRSTLHgcPtziCCqoXRv2xmqjtDBeKQ1E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzU0LzIxLzQy/LzM2MF9GXzU1NDIx/NDI2Nl80RjQwZlE4/R0pWR2d0ZXZNV1V3/bmcwaGxJN0pSdE1a/Mi5qcGc" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://imgs.search.brave.com/dIRMeQzTzWVXp0BzFcadws02_3a0BJsC_YHmP46Y6H4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzY5LzcxLzMy/LzM2MF9GXzU2OTcx/MzI5NV9NTnNmSmEx/ZElLSGF0UVZyblVB/enlyWVNxU2JvdzFH/ZC5qcGc" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://imgs.search.brave.com/3UdDZZOnzajjLjhOa2zKNo1Vz6k0A3l_2sjCToWV5-Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by8z/ZC1yZW5kZXJpbmct/Y3V0ZS1jYXJ0b29u/LWRyYWdvbl8yMy0y/MTUxNzAxOTM3Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt=""></div>
+            <div class="item" style="--position: 10"><img src="https://imgs.search.brave.com/WpPNuef9slGbXgN4xjGH1IOVdh6Ia7Lj7sxAe_jBICQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0aXguY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzEx/L0ZyZWUtY2FydG9v/bi1iYWJ5LWRyYWdv/bi1jbGlwLWFydC5w/bmc" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+              
+            </h1>
+            <div class="author">
+                
+                
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
